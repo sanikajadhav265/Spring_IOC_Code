@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+    <!DOCTYPE beans PUBLIC
+    "-//SPRING//DTD BEAN//EN"
+    "https://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="library" class="com.entity.Library">
+
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg value="KnowledgeHub"></constructor-arg>
+		<constructor-arg value="Shivajinagar"></constructor-arg>
+		<constructor-arg value="Mr.Samarth"></constructor-arg>
+		<constructor-arg value="true"></constructor-arg>
+		<constructor-arg value="800"></constructor-arg>
+        <constructor-arg>
+            <list>
+		      <value>Chatrapati Shivaji Maharaj</value>
+		      <value>pratik</value>
+		    </list>  
+        </constructor-arg>
+        
+<!--         <constructor-arg value="books"> -->
+<!--             <set> -->
+<!--               <value>Harry Potter</value> -->
+<!--               <value>Sanika</value>        -->
+<!--            </set> -->
+<!--         </constructor-arg> -->
+		
+		
+	
+
+	</bean>
+
+</beans>
