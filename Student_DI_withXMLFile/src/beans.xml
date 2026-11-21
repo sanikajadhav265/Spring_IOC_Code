@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="student" class="com.entity.Student" autowire="byName">
+		<property name="sId" value="101"></property>
+		<property name="rollNo" value="15"></property>
+		<property name="sName" value="Vedika"></property>
+		<property name="mobNo" value="7768030791"></property>
+		<property name="emailId" value="vedu12@gmail.com"></property>
+	</bean>
+
+	<bean id="currentAddress" class="com.entity.Address">
+		<property name="aid" value="01"></property>
+		<property name="city" value="Pune"></property>
+		<property name="pinCode" value="421456"></property>
+		<property name="landmark" value="Akurdi Railway Station"></property>
+	</bean>
+
+	<bean id="permnentAddress" class="com.entity.Address">
+		<property name="aid" value="10"></property>
+		<property name="city" value="Sangli"></property>
+		<property name="pinCode" value="416408"></property>
+		<property name="landmark" value="Madhavnagar"></property>
+	</bean>
+
+	<bean id="hostelAddress" class="com.entity.Address">
+		<property name="aid" value="06"></property>
+		<property name="city" value="Talegaon"></property>
+		<property name="pinCode" value="416489"></property>
+		<property name="landmark" value="Near by Hanuman Temple"></property>
+	</bean>
+</beans>
