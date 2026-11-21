@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="product" class="com.entity.Product" scope="prototype">
+
+		<property name="productId" value="101"></property>
+		<property name="productName" value="T-Shirt"></property>
+		<property name="productPrice" value="500.00"></property>
+		<property name="productQuantity" value="2"></property>
+		<property name="customer">
+<!-- 			<list> -->
+<!-- 				<value>Sanika</value> -->
+<!-- 				<value>Pooja</value> -->
+<!-- 			</list> -->
+
+       <set>
+       
+       <value>01</value>
+       <value>Apurva</value>
+       
+       
+       </set>
+		</property>
+	</bean>
+</beans>
