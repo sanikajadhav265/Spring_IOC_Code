@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="product" class="com.entity.Product">
+		<property name="pId" value="101"></property>
+		<property name="pName" value="T-Shirt"></property>
+		<property name="price" value="500.00"></property>
+		<property name="quantity" value="1"></property>
+		<property name="isAvailable" value="true"></property>
+		<property name="customer" ref="customer1"></property>
+	</bean>
+
+	<bean id="customer1" class="com.entity.Customer">
+		<property name="cId" value="1"></property>
+		<property name="cName" value="Sanika"></property>
+		<property name="mobNO" value="7768030791"></property>
+		<property name="address" value="Nigdi"></property>
+	</bean>
+
+</beans>
